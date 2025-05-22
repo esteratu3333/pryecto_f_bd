@@ -1,0 +1,82 @@
+.container{
+    width: 800px;
+    height: 250px;
+    margin: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+}
+.caja-login{
+   
+    
+}
+
+.formulario_login_fuente_cabecera{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_login_cabecera{
+    display: flex;
+    justify-content: center;
+
+}
+
+.login_gmail{
+    display: flex;
+    justify-content: center;
+
+}
+
+.login_contraseña{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.login_boton{
+    display: flex;
+    justify-content: center;
+
+}
+
+.gmail{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.contraseña{
+    display: flex;
+    justify-content: center;
+
+   
+
+
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+
+}
+
+input{
+
+    padding: 10px 300px 3px 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    padding:10px 25px 10px 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+

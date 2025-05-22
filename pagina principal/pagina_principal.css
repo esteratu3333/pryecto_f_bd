@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*ENCABEZADO Y NAVEGACION */
+
+#nav_principal {
+    background: rgb(215, 213, 213);
+    width: 100vw;
+    height: 15vh;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+#nav_enlaces {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#nav_enlaces a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_enlaces a:hover {
+    text-decoration: underline;
+}
+
+#nav_titulo {
+
+    width: 40%;
+    padding: 10px;
+    display: flex;
+
+
+}
+
+#nav_titulo img {
+    height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+
+/*PAGINA PRINCIPAL*/
+
+article {
+    width: 100vw;
+}
+
+#img-fondo {
+    width: 100%;
+    
+}
+
+
+/*TABLA*/
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    background:white;
+    
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+th {
+    background-color: #f0f0f0;
+}
