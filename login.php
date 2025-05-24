@@ -17,7 +17,8 @@
                     </div>
 
                     <div class = "login_gmail">
-                        <p class ="frase_gmail">Escribir gmail </p>
+
+                        <tr><p class ="frase_gmail">Escribir gmail </p></tr>
                         <input class="gmail" type="text" name="user" placeholder = "Gmail">
                         <br><br>
                     </div>

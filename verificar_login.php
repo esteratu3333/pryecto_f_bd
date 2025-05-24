@@ -23,7 +23,6 @@ $resultado3 = pg_execute($conexion, "consulta_login_administrador", array($usuar
 // Verificar si se encontró el usuario
 if (pg_num_rows($resultado) > 0) {
     $fila = pg_fetch_assoc($resultado);
-
     $cedula_estudiante = $fila['cedula'];
     $_SESSION['cedula'] = $cedula_estudiante;
     
@@ -32,16 +31,17 @@ if (pg_num_rows($resultado) > 0) {
 } 
 elseif (pg_num_rows($resultado2) > 0) {
     $fila = pg_fetch_assoc($resultado2);
-    $nombre_profesor = $fila['cedula'];
-    $_SESSION['cedula_profesor'] = $nombre_profesor;
+    $cedula_profesor = $fila['cedula'];
+    $_SESSION['cedula_profesor'] = $cedula_profesor;
+
     header("Location: ingrese_profesor.php");
     exit();
 }
 elseif (pg_num_rows($resultado3) > 0) {
     $fila = pg_fetch_assoc($resultado3);
     $nombre_administrador = $fila['nombre'];
-
     $_SESSION['nombre_administrador'] = $nombre_administrador;
+
     header("Location: ingrese_administrador.php");
     exit();
 }

@@ -9,7 +9,7 @@ session_start(); // Inicia la sesión para acceder a $_SESSION
 // 2. Obtención de datos de entrada (Cédula, Año, Semestre)
 // Se obtienen de la sesión y del POST, como se ha discutido.
 $cedula_estudiante = $_SESSION['cedula'] ?? null;
-print $cedula_estudiante;
+
 $anio = $_POST['anio_seleccionado'] ?? null;
 $semestre = $_POST['semestre_seleccionado'] ?? null;
 
@@ -27,22 +27,7 @@ if ($cedula_estudiante === null || $anio === null || $semestre === null) {
 // 3. Consulta SQL para obtener todos los datos de notas y materias
 // Esta es la consulta única que une 'notas_semestre2' y 'materias'
 // para obtener todos los campos necesarios. Basada en el diagrama de la base de datos image_c163e8.png.
-$sql_query_all_data = "
-    SELECT
-        ns.id_materia,
-        m.nombre_materia,
-        m.creditos,
-        ns.actividad,        -- Descripción de la actividad (ej. '1', '2', '3')
-        ns.nota,             -- Nota obtenida en la actividad
-        ns.porcentaje        -- Porcentaje de la actividad
-    FROM
-        notas_semestre2 ns   -- Alias 'ns' para la tabla de notas
-    JOIN
-        materias m ON ns.id_materia = m.id_materia -- Unimos con la tabla de materias
-    WHERE
-        ns.cedula = $1 AND ns.anio = $2 AND ns.semestre = $3 -- Filtros principales
-    ORDER BY
-        ns.id_materia ASC, ns.actividad ASC; -- Ordenamos para facilitar la agrupación en PHP
+$sql_query_all_data = "select * from notas_materias_semestre($1, $2, $3) as record(id_materia int, nombre_materia varchar(100), creditos int, actividad varchar(200), nota decimal, porcentaje decimal)
 ";
 
 // Prepara la consulta para evitar inyección SQL y mejorar rendimiento.

@@ -7,10 +7,7 @@
     top: 200px;
     left: 1000px;
 }
-.caja-login{
-   
-    
-}
+
 
 .formulario_login_fuente_cabecera{
     display: flex;
@@ -45,16 +42,12 @@
 .gmail{
     display: flex;
     justify-content: center;
-  
+
 }
 
 .contraseña{
     display: flex;
     justify-content: center;
-
-   
-
-
 }
 
 .boton{
@@ -74,6 +67,12 @@ input{
 
 button{
     padding:10px 25px 10px 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.frace_gmail{ 
     display: flex;
     justify-content: center;
     
