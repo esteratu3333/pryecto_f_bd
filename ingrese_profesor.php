@@ -59,8 +59,12 @@
     </div>
 
 
+
+
+
+
     <div id="formulario2" class="form-container" style = "display: none">
-        <form method = "post" action = "ingrese_profesor.js">
+        <form method = "post" action = "borrar_notas.php">
         <select name="id_materia">
             <?php
             pg_result_seek($CONSULTA, 0); 
@@ -68,10 +72,28 @@
             ?>
             <option value="<?php echo $obj1->id_materia?>"><?php echo $obj1->nombre_materia ?></option>
             <?php } ?>
-            <input type="submit" value="Enviar">
         </select>
+
+        <select name="anio">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+
+        <select name="semestre">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+
+        <input type="submit" value="Enviar">
         </form>
     </div>
+
+
+
+
+
+
 
     <div id="formulario3" class="form-container" style = "display: none">
         <form method = "post" action = "ingrese_profesor.js">
