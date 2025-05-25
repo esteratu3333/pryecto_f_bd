@@ -8,20 +8,21 @@
 
 <body>
 
-    <div id="nav_principal">
+    <div class="nav_principal" id="nav_principal">
 
-        <div id="nav_titulo">
-            <img src="../imagenes/logo.jpeg" alt="logo">
+        <div class="nav_titulo" id="nav_titulo">
+            <img src="../imagenes/logo.jpeg" alt="logo" class="logo-nav">
             <h2>UNIVERSIDAD NUEVA Y DIFERENTE</h2>
         </div>
 
-        <div id="nav_enlaces">
+        <button class="botonmovil" id="botonmovil">☰</button>
 
-            <a href="../login.php">login administrador</a>
-            <a href="../login.php">login profesor</a>
-            <a href="../login.php">login estudiante</a>
-
-        </div>
+        <ul class="nav_link" id="nav_link">
+            <li><a href="../login.php">login administrador</a> </li>
+            <li><a href="../login.php">login profesor</a> </li>
+            <li><a href="../login.php">login estudiante</a> </li>
+        </ul>
+        
 
     </div>
 
@@ -48,7 +49,17 @@
         
 
     </article>
+    
+<script>
+    
+    const botonm = document.getElementById('botonmovil');
+    const navlink = document.getElementById('nav_link');
 
+    botonm.addEventListener('click', () => {
+     navlink.classList.toggle('active');
+    });
+
+  </script>
 </body>
 
 </html>
