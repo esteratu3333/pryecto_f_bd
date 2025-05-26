@@ -1,81 +1,66 @@
-.container{
-    width: 800px;
-    height: 250px;
-    margin: 10px;
-    padding: 5px;
-    position: absolute;
-    top: 200px;
-    left: 1000px;
+body{
+      background: linear-gradient(135deg, rgb(201, 189, 189), black);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
+.login_container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
 
+    .login_container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
 
-.formulario_login_fuente_cabecera{
-    display: flex;
-    justify-content: center;
-}
+    .form_group {
+      margin-bottom: 20px;
+    }
 
-.formulario_login_cabecera{
-    display: flex;
-    justify-content: center;
+    .form_group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #555;
+    }
 
-}
+    .form_group input {
+      width: 90%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
 
-.login_gmail{
-    display: flex;
-    justify-content: center;
+    .form_group input:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
 
-}
+    .boton {
+      width: 100%;
+      background-color: #667eea;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-.login_contraseña{
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.login_boton{
-    display: flex;
-    justify-content: center;
-
-}
-
-.gmail{
-    display: flex;
-    justify-content: center;
-
-}
-
-.contraseña{
-    display: flex;
-    justify-content: center;
-}
-
-.boton{
-    display: flex;
-    justify-content: center;
-
-}
-
-input{
-
-    padding: 10px 300px 3px 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-
-button{
-    padding:10px 25px 10px 25px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.frace_gmail{ 
-    display: flex;
-    justify-content: center;
-    
-}
+    .boton:hover {
+      background-color: #5a67d8;
+    }
 
 

@@ -1,9 +1,56 @@
-button{
-    margin: 30px 0 30px 5px;
-    display: block;
+.reset-button-style {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+.contenedor-form{
+    background-color: white;
+    display :flex;
+    justify-content: center;
 
-.borde_botones{
-    width: 250px;
-    height: 500px;
+
 }
+.form-container{
+    
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+
+}
+    .form_group {
+      margin-bottom: 20px;
+      display: flex;
+      
+
+
+
+    }
+
+    .form_group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form_group input {
+      width: 90%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+    .grupoh{
+    display: flex;
+    }
+

@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const botonm = document.getElementById('botonmovil');
+    const navlink = document.getElementById('nav_link');
+
+    botonm.addEventListener('click', () => {
+     navlink.classList.toggle('active');
+    });
     // Selecciona todos los botones
     const botones = document.querySelectorAll('button'); 
     // Selecciona todos los contenedores de formulario que tienen la clase 'form-container'
