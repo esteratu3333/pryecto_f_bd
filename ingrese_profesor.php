@@ -23,7 +23,6 @@
 
             <button class = "boton1" id = "id_boton1" type="button">ingresar notas</button>
             <button class = "boton3" id = "id_boton2" type="button">borrar notas</button>
-            <button class = "boton4" id = "id_boton3" type="button">actualizar notas</button>
 
         </div>
 
@@ -89,25 +88,6 @@
         </form>
     </div>
 
-
-
-
-
-
-
-    <div id="formulario3" class="form-container" style = "display: none">
-        <form method = "post" action = "ingrese_profesor.js">
-        <select name="id_materia">
-            <?php
-            pg_result_seek($CONSULTA, 0); 
-            while($obj2=pg_fetch_object($CONSULTA)){
-            ?>
-            <option value="<?php echo $obj2->id_materia?>"><?php echo $obj2->nombre_materia ?></option>
-            <?php } ?>
-            <input type="submit" value="Enviar">
-        </select>
-        </form>
-    </div>
 <script src="ingrese_profesor.js"></script>
 </body>
 </html>

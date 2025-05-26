@@ -101,8 +101,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['estudiantes'])) {
 
 // --- Lógica para OBTENER Y MOSTRAR LAS NOTAS EXISTENTES ---
 // OJO: Si quieres mostrar la columna 'nota_por_materia' también aquí, añádela a la consulta SELECT
-$query_select = "SELECT * from notas_por_materias($1, $2, $3)as record(cedula int, nombre varchar(100), id_materia int, actividad varchar(200), nota decimal, porcentaje decimal, nota_por_materia int);"; // Es buena idea ordenar por este campo
-
+$query_select = "SELECT * from notas_por_materias($1, $2, $3) AS record(
+    cedula INT,
+    nombre VARCHAR(100), -- Asegúrate que el tipo de nombre coincida con tu tabla 'estudiante'
+    id_materia INT,
+    actividad VARCHAR(200), -- Asegúrate que el tipo de actividad coincida con tu tabla 'notas_semestre2'
+    nota DECIMAL,
+    porcentaje DECIMAL,
+    nota_por_materia INT,
+    id INT -- ¡Asegúrate que el tipo de ID coincida!
+);";
 pg_prepare($conexion, "registro_nota_profesor_select", $query_select);
 $resultado = pg_execute($conexion, "registro_nota_profesor_select", array($id_materia, $anio, $semestre));
 

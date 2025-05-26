@@ -27,7 +27,7 @@ if ($cedula_estudiante === null || $anio === null || $semestre === null) {
 // 3. Consulta SQL para obtener todos los datos de notas y materias
 // Esta es la consulta única que une 'notas_semestre2' y 'materias'
 // para obtener todos los campos necesarios. Basada en el diagrama de la base de datos image_c163e8.png.
-$sql_query_all_data = "select * from notas_materias_semestre($1, $2, $3) as record(id_materia int, nombre_materia varchar(100), creditos int, actividad varchar(200), nota decimal, porcentaje decimal)
+$sql_query_all_data =  "SELECT * from notas_por_semestre($1, $2, $3) as record(id_materia int, nombre_materia varchar(100), creditos int, actividad varchar(200), nota decimal, porcentaje decimal)
 ";
 
 // Prepara la consulta para evitar inyección SQL y mejorar rendimiento.
