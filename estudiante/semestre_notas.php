@@ -3,7 +3,8 @@
 // 1. Inclusión de la conexión a la base de datos y inicio de sesión
 // Asegúrate de que la ruta a 'conexion_postgresql.php' sea correcta.
 // Se asume que 'conexion_postgresql.php' establece la variable $conexion.
-require '../conexion_postgresql.php';
+require('../pagina principal/conexion_postgresql.php');
+
 session_start(); // Inicia la sesión para acceder a $_SESSION
 
 // 2. Obtención de datos de entrada (Cédula, Año, Semestre)

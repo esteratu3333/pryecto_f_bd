@@ -48,139 +48,192 @@
 
     </div> -->
 
-    <div id="formulario1" class="form-container" style = "display: none" >    
+    <div class="contenedor-form">
+
+        <div id="formulario1" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>horario</h2>
+
+            <div class="grupoh">
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
+            </div>
+            
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+        </div>
 
-    <div id="formulario2" class="form-container" style = "display: none" >    
+        <div id="formulario2" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>promedio</h2>
+
+            <div class="grupoh">
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+         </div>
 
-    <div id="formulario3" class="form-container" style = "display: none" >    
+        <div id="formulario3" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>registro de materias</h2>
+
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+        </div>
 
-    <div id="formulario4" class="form-container" style = "display: none" >    
+        <div id="formulario4" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>registro de horario</h2>
+
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+        </div>
 
-    <div id="formulario5" class="form-container" style = "display: none" >    
+        <div id="formulario5" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>cancelacion de materias</h2>
+
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+         </div>
 
-    <div id="formulario6" name ="notas" class="form-container" style = "display: none" >    
+         <div id="formulario6" name ="notas" class="form-container" style = "display: none" >    
         <form method="post" action="estudiante\semestre_notas.php">
+            <h2>notas por semestre</h2>
+
+            <div class = "form_group">
             <label for="encabezado_año">año</label><br>
             <select id="año" name="anio_seleccionado">
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
                 <option value="2025">2025</option>
-            </select><br><br>
-        
+            </select>
+            </div>
+
+            <div class = "form_group">
             <label for="encabezado_semestre">semestre</label><br>
             <select id="semestre" name="semestre_seleccionado">
                 <option value="1">1</option>
                 <option value="2">2</option>
-            </select><br><br>
+            </select>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
-    </div>
+        </div>
 
-    <div id="formulario7" class="form-container" style = "display: none" >    
+        <div id="formulario7" class="form-container" style = "display: none" >    
         <form action="procesar_formulario.php" method="post">
+            <h2>cerrar sesion</h2>
+
+            <div class = "form_group">
             <label for="paises">año</label><br>
             <select id="paises" name="pais_seleccionado">
                 <option value="colombia">2023</option>
                 <option value="mexico">2024</option>
                 <option value="argentina">2025</option>
-            </select><br><br>
+            </select>
+            </div>
         
+            <div class = "form_group">
             <label for="frutas">semestre</label><br>
             <select id="frutas" name="fruta_favorita">
                 <option value="manzana">1</option>
                 <option value="platano">2</option>
-            </select><br><br>
+            </select>
+            </div>
     
             <input type="submit" value="Enviar">
         </form>
+        </div>
     </div>
     <script src="ingrese.js"></script>
+
+   
 </body>
 
 </html>
