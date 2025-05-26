@@ -10,29 +10,12 @@
 
 <body>
 
-    <div class="nav_principal" id="nav_principal">
+    <div id="nav_principal">
 
-        <div class="nav_titulo" id="nav_titulo">
-            <img src="../imagenes/logo.jpeg" alt="logo" class="logo-nav">
+        <div id="nav_titulo">
+        
             <h2>UNIVERSIDAD NUEVA Y DIFERENTE</h2>
         </div>
-
-        <button class="botonmovil" id="botonmovil">☰</button>
-
-        <ul class="nav_link" id="nav_link">
-            <li><button class = "boton1 reset-button-style" id = "id_boton1" type="button">horario</button></li>
-            <li><button class = "boton3 reset-button-style" id = "id_boton2" type="button">promedio</button></li>
-            <li><button class = "boton4 reset-button-style" id = "id_boton3" type="button">registro de materias</button></li>
-            <li><button class = "boton5 reset-button-style" id = "id_boton4" type="button">registro de horario</button></li>
-            <li><button class = "boton6 reset-button-style" id = "id_boton5" type="button">cancelacion de materias</button></li>
-            <li><button class = "boton7 reset-button-style" id = "id_boton6" type="button">notas por semestre</button></li>
-            <button class = "boton8 reset-button-style" id = "id_boton7" type="button">cerrar sesion</button></li>
-        </ul>
-        
-
-    </div>
-
-   <!--<div id="nav_principal">
 
         <div class = "borde_botones"id="nav_enlaces">
 
